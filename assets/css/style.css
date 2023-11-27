@@ -25,6 +25,7 @@ body {
     font-family: 'Open sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -94,6 +95,7 @@ a {
     right: 0;
     width: 100%;
     border-bottom: 0.1rem solid var(--light-gray);
+    z-index: 1;
 }
 
 .menu-content {
@@ -143,18 +145,34 @@ a {
 }
 
 .menu-spacing {
-    height: 65px;
+    height: 6.5rem;
 }
 
+/*INTRO:*/
+
 .intro-content {
+    position: relative;
+    top: -7rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--gap);
     height: 100vh;
 }
 
-.intro-text-content {
+.intro-text-content, .intro-img {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+}
+
+.intro-text-content h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    line-height: 1.2;
+
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
 }
