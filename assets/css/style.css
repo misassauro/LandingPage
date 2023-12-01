@@ -193,7 +193,7 @@ p {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .grid-main-heading {
@@ -251,6 +251,8 @@ p {
 
 }
 
+/*PRICING*/
+
 table {
     min-width: 36rem;
     width: 100%;
@@ -273,5 +275,32 @@ table td, table th {
 
 tfoot td, table th {
     background: var(--light-gray);
+}
+
+/*CONTATO*/
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap);
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    background: var(--white);
+    padding: 1.5rem 2rem;
+    width: 100%;
 }
 
